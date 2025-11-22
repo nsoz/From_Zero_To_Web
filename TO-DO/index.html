@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <title>TO-DO</title>
+    </head>
+    <body>
+        <h1>TO-DO</h1>
+        <form> <!--create. a form for get input from client-->
+            <label for="Mtitle">Enter the Mission title : </label><br> <!--label for description of input area-->
+            <input type="text" id="Mtitle"><br> <!--<br> is break for line like \n-->
+
+            <label for="Mdescription">Enter the Mission description : </label><br>
+            <input type="text" id="Mdescription"><br>
+
+            <label for="Mdeadline">Enter the Mission deadline : </label><br>
+            <input type="date" id="Mdeadline"><br>
+        </form>
+
+        <button id="Add" type="button">ADD!</button>
+        <ul id="TaskList"></ul> <!--ul is a emotty list which one is gonna get full by js-->
+
+        <script src="TO-DO_app.js"></script>
+    </body>
+</html>
