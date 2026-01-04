@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <title>YOUR NOTE BOOK</title>
+        <style>
+            h1 {color: grey;}
+            button{color:green;}
+        </style>
+    </head>
+    <body>
+        <h1>----------YOUR NOTEBOOK-----------</h1>
+        <div class="button-container">
+            <button id="Add">Add New Note</button><br>
+            <div class="popup-overlay" id="popupOverlay">
+                <div class="popup" id="popup">
+                    <span class="close" id="closePopup">&times;</span>
+                    <div class="popup-content">
+                        <p>Add new note</p>
+                        <input type="" placeholder="note title" id="new_note_title"><br>
+                        <input type="" placeholder="note" id="new_note">
+                        <button id="note_add">Add note</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div> -->
+        <div id="cards-container"></div>
+
+        <script src="Note_book.js"></script>
+    </body>
+</html>
