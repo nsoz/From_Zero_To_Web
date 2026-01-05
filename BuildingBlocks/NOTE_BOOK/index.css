@@ -1,20 +1,88 @@
 .card{
-  background-color :#f5f5f5;
-  width: 600px;
-  padding: 0;
+  width: 200px;
+  padding: 12px;
+  background: rgb(242, 239, 239); /* yarı şeffaf */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  text-align: center;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.field label{
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #444;
+}
+
+.field input,
+.field textarea{
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.field textarea{
+  min-height: 120px;
+  resize: none;
 }
 
 .button-container {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-overlay{
   position: absolute;
-  top: 100%;
-  left: 0;
+  justify-content: center;
   background-color: white;
   border: 1px solid black;
+  border-radius: 14px;
   padding: 20px;
   z-index: 999;
   display: none; 
+}
+
+@media (max-width: 768px) {
+  #cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #cards-container {
+    grid-template-columns: 1fr;
+  }
 }
