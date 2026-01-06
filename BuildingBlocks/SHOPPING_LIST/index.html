@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <title>YOUR SHOPPING LIST</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: grey;
+            }
+            button{
+                    color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> --SHOPPING LIST-- </h1>
+        <div class = "button-div">
+            <button id ="Add">Add Metarial</button>
+            <button id="Delete">Delete Metarial</button>
+            <div class="popup" id="popup">
+                <div class="popup-overlay"></div> 
+                <div class="popup-content">
+                    <span id="closePopup">&times;</span>
+                    <div class="select" id="choosen">
+                        <div class="item" data-value="milk">
+                            <img src="milk.jpg">
+                            <span>Milk</span>
+                        </div>
+                        <div class="item" data-value="coffe">
+                            <img src="coffe.jpg">
+                            <span>Coffe</span>
+                        </div>
+                        <div class="item" data-value="bread">
+                            <img src="bread.jpg">
+                            <span>Bread</span>
+                        </div>
+                        <div class="item" data-value="tomato">
+                            <img src="tomato.jpg">
+                            <span>Tomato</span>
+                        </div>
+                        <div class="item" data-value="potato">
+                            <img src="potato.jpg">
+                            <span>Potato</span>
+                        </div>
+                        <div class="item" data-value="cream">
+                            <img src="cream.jpg">
+                            <span>Cream</span>
+                        </div>
+                        <div class="item" data-value="banana">
+                            <img src="banana.jpg">
+                            <span>Banana</span>
+                        </div>
+                        <div class="item" data-value="orange">
+                            <img src="orange.jpg">
+                            <span>Orange</span>
+                        </div>
+                        <div class="item" data-value="prawn">
+                            <img src="prawn.jpg">
+                            <span>Prawn</span>
+                        </div>
+                        <div class="item" data-value="squid">
+                            <img src="squid.jpg">
+                            <span>Squid</span>
+                        </div>
+                   </div>
+                   <div class="prebutton" id="prebutton" >
+                   <button id="pre_list">Prepair The List</button>
+                   </div>
+                </div>
+            </div>
+            <div id="lst"></div>
+        </div>
+        <script src="Shopping_list.js"></script>
+    </body>
+</html>
